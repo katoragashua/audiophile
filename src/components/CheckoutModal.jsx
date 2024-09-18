@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Overlay from "./overlay";
+import Overlay from "./Overlay";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
 import tick from "/src/assets/shared/desktop/tick.svg";
