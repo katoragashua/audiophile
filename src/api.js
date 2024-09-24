@@ -1,6 +1,6 @@
 export const getProducts = async () => {
   try {
-    const response = await fetch(`/src/data.json`);
+    const response = await fetch(`./src/data.json`);
     if (!response.ok) {
       throw new Error("Failed to fetch products");
     }
@@ -14,7 +14,7 @@ export const getProducts = async () => {
 
 export const getProduct = async (id) => {
   try {
-    const response = await fetch(`/src/data.json`);
+    const response = await fetch(`./src/data.json`);
     if (!response.ok) {
       throw new Error("Failed to fetch products");
     }

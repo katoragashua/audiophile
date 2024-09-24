@@ -4,23 +4,10 @@ import Btn from "./Btn";
 import { Context } from "../Context";
 
 
-const Hero = ({ newProducts }) => {
-  // console.log(newProducts);
+const Hero = () => {
   const {viewport} = useContext(Context)
   console.log(viewport);
   
-
-  const heroProducts = newProducts.map((product) => (
-    <div key={product.id}>
-      <img src={product.image.desktop} alt={product.name} />
-      <h3>{product.name}</h3>
-      <p>
-        Experience natural, lifelike audio and exceptional build quality made
-        for the passionate music enthusiast.
-      </p>
-    </div>
-  ));
-
   return (
     <section className="hero relative h-[80vh] md:h-[60vh] xl:h-[100vh] text-white flex">
       <div className="container flex">

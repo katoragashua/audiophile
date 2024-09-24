@@ -29,18 +29,18 @@ export const loader = async () => {
     //   }
     //   return acc;
     // }, []);
-    return { products, newProducts };
+    return { products  };
   } catch (error) {
     return null;
   }
 };
 
 const Home = () => {
-  const { newProducts, products } = useLoaderData();
+  const {products } = useLoaderData();
   const { viewport } = useContext(Context);
   return (
     <div className="home">
-      <Hero newProducts={newProducts} />
+      <Hero />
       <div className="grid gap-32 md:gap-40">
         <Categories />
         <section>
