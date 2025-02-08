@@ -4,15 +4,15 @@ import CategoryCard from "./CategoryCard";
 const categories = [
   {
     category: "headphones",
-    img: "/src/assets/shared/desktop/image-category-thumbnail-headphones.png",
+    img: "src/assets/shared/desktop/image-category-thumbnail-headphones.png",
   },
   {
     category: "speakers",
-    img: "/src/assets/shared/desktop/image-category-thumbnail-speakers.png",
+    img: "src/assets/shared/desktop/image-category-thumbnail-speakers.png",
   },
   {
     category: "earphones",
-    img: "/src/assets/shared/desktop/image-category-thumbnail-earphones.png",
+    img: "src/assets/shared/desktop/image-category-thumbnail-earphones.png",
   },
 ];
 
