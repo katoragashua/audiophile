@@ -152,7 +152,7 @@ button,
   position: relative;
   background-color: rgba(25, 25, 25, 0.638);
   background-color: #191919;
-  background-image: url("src/assets/home/desktop/image-hero.jpg");
+  background-image: url("/src/assets/home/desktop/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -12vh;

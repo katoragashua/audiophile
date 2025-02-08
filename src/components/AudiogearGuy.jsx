@@ -37,7 +37,7 @@ const AudiogearGuy = (props) => {
         </div>
         <div className="overflow-auto rounded-lg">
           <img
-            src={`/src/assets/shared/${viewport}/image-best-gear.jpg`}
+            src={`src/assets/shared/${viewport}/image-best-gear.jpg`}
             alt="Guy with headphones"
             data-aos="zoom-in"
           />
