@@ -31,19 +31,19 @@ const socials = [
     id: 1,
     title: "facebook",
     url: "https://www.facebook.com",
-    img: "/src/assets/shared/desktop/icon-facebook.svg",
+    img: "src/assets/shared/desktop/icon-facebook.svg",
   },
   {
     id: 2,
     title: "twitter",
     url: "https://www.twitter.com",
-    img: "/src/assets/shared/desktop/icon-twitter.svg",
+    img: "src/assets/shared/desktop/icon-twitter.svg",
   },
   {
     id: 3,
     title: "instagram",
     url: "https://www.instagram.com",
-    img: "/src/assets/shared/desktop/icon-instagram.svg",
+    img: "src/assets/shared/desktop/icon-instagram.svg",
   },
 ];
 
