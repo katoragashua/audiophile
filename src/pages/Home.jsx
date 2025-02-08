@@ -90,7 +90,7 @@ const Home = () => {
               {/* <div className="flex flex-col gap-8 rounded-lg bg-zx7 px-20 py-20  bg-cover relative"></div> */}
               {
                 <img
-                  src={`/src/assets/home/${viewport}/image-speaker-zx7.jpg`}
+                  src={`src/assets/home/${viewport}/image-speaker-zx7.jpg`}
                   alt=""
                   className="absolute object-cover w-full h-full -z-10"
                 />
@@ -106,7 +106,7 @@ const Home = () => {
               <div className="rounded-lg overflow-auto w-full md:w-1/2">
                 {
                   <img
-                    src={`/src/assets/home/${viewport}/image-earphones-yx1.jpg`}
+                    src={`src/assets/home/${viewport}/image-earphones-yx1.jpg`}
                     alt=""
                     className="object-cover"
                   />
