@@ -11,11 +11,13 @@ const CategoryCard = ({ category, img }) => {
       once: false, // Whether animation should happen only once
     });
   }, []);
+          console.log(category);
+          
 
   return (
     <div className="flex flex-col items-center justify-end text-center text-black bg-snow p-6 pt-24 md:pt-28 rounded-lg gap-4 relative">
       <img
-        src={img}
+        src={"/" + img}
         alt={category + "img"}
         className="w-[45%] md:w-[55%] absolute top-[-30%] md:top-[-20%] xl:top-[-38%]"
         data-aos="zoom-out-up"

@@ -13,6 +13,8 @@ export const loader = async ({ params }) => {
     const product = products.find(
       (product) => product.name === params.productName
     );
+    console.log(product);
+    
     return product;
   } catch (error) {
     console.log(error);
