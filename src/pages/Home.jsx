@@ -29,14 +29,14 @@ export const loader = async () => {
     //   }
     //   return acc;
     // }, []);
-    return { products  };
+    return { newProducts  };
   } catch (error) {
     return null;
   }
 };
 
 const Home = () => {
-  const {products } = useLoaderData();
+  const {newProducts } = useLoaderData();
   const { viewport } = useContext(Context);
   return (
     <div className="home">
