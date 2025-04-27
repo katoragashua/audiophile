@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import headphoneGuy from "../assets/shared/desktop/image-best-gear.jpg";
+import headphoneGuy from "/assets/shared/desktop/image-best-gear.jpg";
 import { Context } from "../Context";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -37,7 +37,7 @@ const AudiogearGuy = (props) => {
         </div>
         <div className="overflow-auto rounded-lg">
           <img
-            src={`/src/assets/shared/${viewport}/image-best-gear.jpg`}
+            src={`/assets/shared/${viewport}/image-best-gear.jpg`}
             alt="Guy with headphones"
             data-aos="zoom-in"
           />

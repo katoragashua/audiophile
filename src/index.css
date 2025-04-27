@@ -152,7 +152,7 @@ button,
   position: relative;
   background-color: rgba(25, 25, 25, 0.638);
   background-color: #191919;
-  background-image: url("/src/assets/home/desktop/image-hero.jpg");
+  background-image: url("/assets/home/desktop/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -12vh;
@@ -291,7 +291,7 @@ form input {
   }
 
   .hero {
-    background-image: url("/src/assets/home/tablet/image-hero.jpg");
+    background-image: url("/assets/home/tablet/image-hero.jpg");
     background-position: center -8vh;
   }
 
@@ -317,7 +317,7 @@ form input {
   }
 
   .hero {
-    background-image: url("/src/assets/home/mobile/image-hero.jpg");
+    background-image: url("/assets/home/mobile/image-hero.jpg");
     background-position-y: bottom;
   }
 

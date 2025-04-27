@@ -47,6 +47,9 @@ const ProductDetailPage = (props) => {
     gallery,
   } = product;
 
+  console.log(image);
+  
+
   return (
     <div className="grid gap-40">
       <section className="container product-intro">
@@ -55,7 +58,7 @@ const ProductDetailPage = (props) => {
         </Link>
         <div className="flex flex-col md:flex-row justify-between md:gap-24 xl:gap-28 items-center">
           <img
-            src={`/${image[viewport]}`}
+            src={`${image[viewport]}`}
             alt={name + " image"}
             className="rounded-lg md:max-w-[43%] xl:max-w-[50%]"
           />
@@ -122,21 +125,21 @@ const ProductDetailPage = (props) => {
       <section className="container product-masonry-gallery">
         <div>
           <img
-            src={`/${gallery?.first?.desktop}`}
+            src={`${gallery?.first?.desktop}`}
             alt=""
             className="object-cover hover:scale-[1.1] ease-in-out duration-200 "
           />
         </div>
         <div>
           <img
-            src={`/${gallery?.second?.desktop}`}
+            src={`${gallery?.second?.desktop}`}
             alt=""
             className="object-cover hover:scale-[1.1] ease-in-out duration-200 "
           />
         </div>
         <div>
           <img
-            src={`/${gallery?.third?.desktop}`}
+            src={`${gallery?.third?.desktop}`}
             alt=""
             className="hover:scale-[1.2] ease-in-out duration-200 "
           />
@@ -151,7 +154,7 @@ const ProductDetailPage = (props) => {
               className="flex flex-col gap-8 items-center"
             >
               <img
-                src={`/${product?.image[viewport]}`}
+                src={`${product?.image[viewport]}`}
                 alt={product?.name}
                 className="rounded-lg"
               />

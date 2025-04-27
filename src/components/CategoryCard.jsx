@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import arrowIcon from "../assets/shared/desktop/icon-arrow-right.svg";
+import arrowIcon from "/assets/shared/desktop/icon-arrow-right.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

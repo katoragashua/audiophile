@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Overlay from "./Overlay";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
-import tick from "/src/assets/shared/desktop/tick.svg";
+import tick from "/assets/shared/desktop/tick.svg";
 
 const CheckoutModal = () => {
   const { cart, toggleOverlay, total, shipping, vat } = useContext(Context);

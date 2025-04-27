@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import audiophile from "../assets/audiophile.svg";
+import audiophile from "/assets/audiophile.svg";
 
 const links = [
   {
@@ -31,19 +31,19 @@ const socials = [
     id: 1,
     title: "facebook",
     url: "https://www.facebook.com",
-    img: "/src/assets/shared/desktop/icon-facebook.svg",
+    img: "/assets/shared/desktop/icon-facebook.svg",
   },
   {
     id: 2,
     title: "twitter",
     url: "https://www.twitter.com",
-    img: "/src/assets/shared/desktop/icon-twitter.svg",
+    img: "/assets/shared/desktop/icon-twitter.svg",
   },
   {
     id: 3,
     title: "instagram",
     url: "https://www.instagram.com",
-    img: "/src/assets/shared/desktop/icon-instagram.svg",
+    img: "/assets/shared/desktop/icon-instagram.svg",
   },
 ];
 

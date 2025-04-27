@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Nav from "./Nav";
-import audiophile from "../assets/audiophile.svg";
-import cart from "../assets/shared/desktop/icon-cart.svg";
+import audiophile from "/assets/audiophile.svg";
+import cart from "/assets/shared/desktop/icon-cart.svg";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
 

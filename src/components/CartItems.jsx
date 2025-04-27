@@ -11,7 +11,7 @@ const CartItems = ({ cart }) => {
           <div className="flex gap-4 items-center">
             <div className="cart-img rounded-lg overflow-hidden">
               <img
-                src={`/src/assets/cart/image-${cartItem?.slug}.jpg`}
+                src={`/assets/cart/image-${cartItem?.slug}.jpg`}
                 width="60px"
                 alt={cartItem?.slug}
               />

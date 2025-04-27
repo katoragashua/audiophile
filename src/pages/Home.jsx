@@ -7,11 +7,11 @@ import data from "../data.json";
 // import yx1Desktop from "../assets/home/desktop/image-earphones-yx1.jpg";
 // import yx1Mobile from "../assets/home/mobile/image-earphones-yx1.jpg";
 // import yx1Tablet from "../assets/home/tablet/image-earphones-yx1.jpg";
-import zx9 from "../assets/home/desktop/image-speaker-zx9.png";
+import zx9 from "/assets/home/desktop/image-speaker-zx9.png";
 // import zx7Desktop from "../assets/home/desktop/image-speaker-zx7.jpg";
 // import zx7Tablet from "../assets/home/tablet/image-speaker-zx7.jpg";
 // import zx7Mobile from "../assets/home/mobile/image-speaker-zx7.jpg";
-import circles from "../assets/home/desktop/pattern-circles.svg";
+import circles from "/assets/home/desktop/pattern-circles.svg";
 import Categories from "../components/Categories.jsx";
 
 import Footer from "../components/Footer.jsx";
@@ -90,7 +90,7 @@ const Home = () => {
               {/* <div className="flex flex-col gap-8 rounded-lg bg-zx7 px-20 py-20  bg-cover relative"></div> */}
               {
                 <img
-                  src={`/src/assets/home/${viewport}/image-speaker-zx7.jpg`}
+                  src={`/assets/home/${viewport}/image-speaker-zx7.jpg`}
                   alt=""
                   className="absolute object-cover w-full h-full -z-10"
                 />
@@ -106,7 +106,7 @@ const Home = () => {
               <div className="rounded-lg overflow-auto w-full md:w-1/2">
                 {
                   <img
-                    src={`/src/assets/home/${viewport}/image-earphones-yx1.jpg`}
+                    src={`/assets/home/${viewport}/image-earphones-yx1.jpg`}
                     alt=""
                     className="object-cover"
                   />
