@@ -7,7 +7,8 @@ import "aos/dist/aos.css";
 const CategoryCard = ({ category, img }) => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
+      delay: 100, // Animation delay in milliseconds
+      duration: 1500, // Animation duration in milliseconds
       once: false, // Whether animation should happen only once
     });
   }, []); 
