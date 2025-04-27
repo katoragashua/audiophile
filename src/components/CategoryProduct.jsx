@@ -1,15 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import Btn from "./Btn";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Context } from "../Context";
 
 const CategoryProduct = (props) => {
+  const { viewport } = useContext(Context);
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
       once: false, // Whether animation should happen only once
     });
   }, []);
+  
 
   return (
     <div
@@ -18,7 +22,7 @@ const CategoryProduct = (props) => {
       } ${props?.index % 2 !== 0 && "flex-row-reverse"}`}
     >
       <img
-        src={props?.categoryImage?.desktop}
+        src={props?.categoryImage[viewport]}
         alt=""
         className="rounded-md md:max-w-[50%]"
         data-aos="zoom-in"

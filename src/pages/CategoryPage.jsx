@@ -11,22 +11,23 @@ import { useLoaderData } from "react-router-dom";
 export const loader = async ({ params }) => {
   try {
     const products = await getProducts();
-    const categories = products.filter((c) => c.category === params.category);
-    return { categories };
+    const categoryProducts = products.filter((c) => c.category === params.category);
+    return { categoryProducts };
   } catch (error) {
     return null;
   }
 };
 
 const CategoryPage = () => {
-  const { categories } = useLoaderData();
+  const { categoryProducts } = useLoaderData();
   const { category } = useParams();
+  
   return (
     <div className="home grid gap-28 xl:gap-40 ">
       <CategoryHeader category={category} />
       <main className="grid gap-28 xl:gap-40 mb-20">
-        {categories.map((category, index) => (
-          <CategoryProduct key={category.id} index={index} {...category} />
+        {categoryProducts.map((product, index) => (
+          <CategoryProduct key={product.id} index={index} {...product} />
         ))}
       </main>
       
