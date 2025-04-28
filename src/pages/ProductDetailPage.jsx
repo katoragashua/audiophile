@@ -47,9 +47,6 @@ const ProductDetailPage = (props) => {
     gallery,
   } = product;
 
-  console.log(image);
-  
-
   return (
     <div className="grid gap-40">
       <section className="container product-intro">

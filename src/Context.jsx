@@ -46,7 +46,9 @@ export const ContextProvider = ({ children }) => {
     setCart((prev) => prev.filter((product) => product.id !== id));
   };
 
-  const shipping = total > 500 ? 100 : 50;
+  const clearCart = () => setCart([]);
+
+  const shipping = (total > 500 ? 100 : 50);
   const vat = total * (5 / 100);
 
   useEffect(() => {
@@ -54,7 +56,6 @@ export const ContextProvider = ({ children }) => {
     localStorage.setItem("cart", JSON.stringify(cart));
     getTotal();
   }, [cart]);
-  
 
   useEffect(() => {
     const handleResize = () => {
@@ -91,7 +92,8 @@ export const ContextProvider = ({ children }) => {
         getTotal,
         shipping,
         vat,
-        resetOverlay
+        resetOverlay,
+        clearCart
       }}
     >
       {children}

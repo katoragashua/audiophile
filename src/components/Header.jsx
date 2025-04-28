@@ -8,7 +8,7 @@ import { Context } from "../Context";
 const Header = () => {
   const { viewport, toggleOverlay } = useContext(Context);
   return (
-    <header className="bg-black text-white relative">
+    <header className="bg-black text-white relative" >
       <div className="container flex items-center justify-between py-10 border-b border-dark-gray">
         {viewport !== "desktop" && (
           <div className="hamburger">

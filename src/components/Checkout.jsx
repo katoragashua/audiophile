@@ -152,7 +152,7 @@ const Checkout = () => {
             <div className="flex gap-4 items-center">
               <div className="cart-img rounded-lg overflow-hidden">
                 <img
-                  src={`/src/assets/cart/image-${cartItem?.slug}.jpg`}
+                  src={`/assets/cart/image-${cartItem?.slug}.jpg`}
                   width="60px"
                   alt={cartItem?.slug}
                 />
@@ -183,7 +183,7 @@ const Checkout = () => {
         </div>
         <div className="cart-total flex justify-between">
           <span>VAT</span>
-          <span className="font-bold">${vat}</span>
+          <span className="font-bold">${vat.toFixed(2)}</span>
         </div>
         <div className="cart-total flex justify-between">
           <span className="">GRAND TOTAL</span>

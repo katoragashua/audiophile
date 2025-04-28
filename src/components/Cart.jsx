@@ -5,7 +5,7 @@ import Overlay from "./Overlay";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-  const { cart, toggleOverlay } = useContext(Context);
+  const { cart, toggleOverlay, clearCart } = useContext(Context);
   return (
     <div className="absolute pt-12 top-0 left-0 right-0 bottom-0 z-50">
       <Overlay />
@@ -16,7 +16,7 @@ const Cart = () => {
               CART({cart.length})
             </span>
             <a href="">
-              <span>Remove all</span>
+              <span onClick={clearCart}>Remove all</span>
             </a>
           </div>
           <CartItems cart={cart} />
@@ -35,7 +35,7 @@ const Cart = () => {
           </div>
 
           <Link
-            to="checkout"
+            to={cart.length? "checkout": "#"}
             className="text-center btn bg-raw-sienna inline-block text-snow font-extrabold"
             onClick={() => toggleOverlay("cart")}
           >

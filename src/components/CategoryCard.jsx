@@ -13,9 +13,6 @@ const CategoryCard = ({ category, img }) => {
     });
   }, []); 
 
-  console.log(img);
-  
-
   return (
     <div className="flex flex-col items-center justify-end text-center text-black bg-snow p-6 pt-24 md:pt-28 rounded-lg gap-4 relative">
       <img

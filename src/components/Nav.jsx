@@ -27,7 +27,7 @@ const links = [
 ];
 
 const Nav = () => {
-  const { viewport } = useContext(Context);
+  const { viewport, resetOverlay } = useContext(Context);
   return viewport !== "desktop" ? (
     <nav className="nav absolute top-full z-50 w-full left-0 bg-black h-[100vh] hidden">
       <ul className="flex flex-col bottom-0 gap-28 items-center py-28">
@@ -45,7 +45,7 @@ const Nav = () => {
       <ul className="flex items-center gap-12 justify-between">
         {links.map((link) => (
           <li key={link.id}>
-            <Link to={link.link} className="links">
+            <Link to={link.link} className="links" onClick={resetOverlay}>
               <span className="sub-title">{link.title}</span>
             </Link>
           </li>

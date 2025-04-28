@@ -13,6 +13,7 @@ const AudiogearGuy = (props) => {
       once: false, // Whether animation should happen only once
     });
   }, []);
+  
   return (
     <section>
       <div className="container flex flex-col-reverse  items-center justify-center gap-16 xl:gap-8 xl:flex-row">

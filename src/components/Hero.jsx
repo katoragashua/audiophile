@@ -6,7 +6,6 @@ import { Context } from "../Context";
 
 const Hero = () => {
   const {viewport} = useContext(Context)
-  console.log(viewport);
   
   return (
     <section className="hero relative h-[80vh] md:h-[60vh] xl:h-[100vh] text-white flex">
