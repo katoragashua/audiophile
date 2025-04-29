@@ -10,7 +10,7 @@ const Cart = () => {
     <div className="absolute pt-12 top-0 left-0 right-0 bottom-0 z-50">
       <Overlay />
       <div className="container relative">
-        <div className="flex flex-col gap-6 font-semibold w-[40%] p-8 border rounded-lg bg-snow absolute right-0">
+        <div className="flex flex-col gap-6 font-semibold md:w:[50%] lg:w-[40%] p-8 border rounded-lg bg-snow lg:absolute right-0">
           <div className="flex justify-between items-center">
             <span className="text-chinese-black text-lg">
               CART({cart.length})
